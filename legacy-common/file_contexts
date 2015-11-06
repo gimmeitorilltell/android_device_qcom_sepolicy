@@ -35,3 +35,6 @@
 
 # IOP
 /data/misc/iop(/.*)?                                                u:object_r:iop_data_file:s0
+
+# Camera
+/data/fdAlbum                                                       u:object_r:camera_data_file:s0
