@@ -1,4 +1,2 @@
-not_full_treble(`
-    binder_use(rild)
-    allow rild { mediaserver_service audioserver_service }:service_manager find;
-')
+binder_use(rild)
+allow rild { mediaserver_service audioserver_service }:service_manager find;

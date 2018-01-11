@@ -1,1 +1,5 @@
+# Allow binder communication
+allow mediacodec wfdservice_service:service_manager find;
+allow mediacodec audioserver_service:service_manager find;
+
 unix_socket_connect(mediacodec, mpctl, perfd)

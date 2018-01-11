@@ -1,2 +1,5 @@
-# Interaction with mptcl and thermal sockets
+allow cameraserver mm-qcamerad:unix_dgram_socket sendto;
+
 unix_socket_connect(cameraserver, mpctl, perfd)
+unix_socket_connect(cameraserver, thermal, thermal-engine)
+unix_socket_connect(cameraserver, sensors, sensors)
